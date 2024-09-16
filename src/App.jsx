@@ -8,7 +8,7 @@ function App() {
       <Header />
 
       <main className='flex-grow'>
-        <Outlet />
+          <Outlet />
       </main>
 
       <Footer />
