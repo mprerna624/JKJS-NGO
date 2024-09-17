@@ -1,6 +1,7 @@
 import React from 'react'
 import { AboutIntro, CarouselSection, Container }from '../Components';
 import icon1 from '../assets/intro-icons/card-1.jpeg';
+import icon2 from '../assets/intro-icons/card-2.png';
 import icon3 from '../assets/intro-icons/card-3.jpeg';
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
             content: "We operate community kitchens that provide hot, nutritious meals to those in need. Our kitchens are strategically located in high-need areas to maximize reach and impact."
         },
         {
-            icon: "",
+            icon: icon2,
             heading: "Food Distribution Programs",
             content: "We organize food drives and distribute essential groceries to low-income families and individuals. Our focus is on providing balanced nutrition to support health and well-being."
         },
