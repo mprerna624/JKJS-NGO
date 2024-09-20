@@ -5,7 +5,7 @@ import image from '../assets/carousel/image-2.jpeg'
 function AboutIntro() {
   return (
     <Container>
-        <div className='py-10 flex flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14 xl:gap-28'>
+        <div className='py-20 flex flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14 xl:gap-28'>
             <div>
                 <img src={image} alt="image" className='max-h-72 lg:max-h-[auto]'/>
             </div>

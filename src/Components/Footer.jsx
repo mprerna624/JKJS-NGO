@@ -12,7 +12,6 @@ function Footer() {
         <Container className='flex flex-wrap justify-center gap-8 md:justify-between'>
             <div className='flex flex-col justify-between'>
                 <Logo />
-                {/* <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempore sit nulla, blanditiis exercitationem dolorum inventore dignissimos, quo quidem ipsa commodi ratione vero doloremque nobis debitis nisi non rerum obcaecati.</div> */}
                 <div className='flex items-center gap-4'>
                     <Link to="#" className='inline-block text-xl'><FaFacebook /></Link>
                     <Link to="#" className='inline-block text-xl'><FaInstagram /></Link>
@@ -27,9 +26,9 @@ function Footer() {
                 <div>
                     <h6 className='font-semibold underline underline-offset-8 mb-6'>Useful Links</h6>
                     <ul>
-                        <li className='mb-3'><Link to="#">Causes</Link></li>
+                        {/* <li className='mb-3'><Link to="#">Causes</Link></li> */}
                         <li className='mb-3'><Link to="#">Gallery</Link></li>
-                        <li className='mb-3'><Link to="#">Blogs</Link></li>
+                        <li className='mb-3'><Link to="#">Articles</Link></li>
                         <li className='mb-3'><Link to="#">About Us</Link></li>
                     </ul>
                 </div>

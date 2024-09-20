@@ -1,13 +1,18 @@
 import React from 'react'
 import { AboutIntro, Button, Container, ProgressContainer } from '../Components';
 import { FaQuoteLeft } from "react-icons/fa";
+import image from "../assets/header-bg.jpeg"
 
 function About() {
   return (
     <>
-      <div className="w-full bg-slate-600">
-          <Container>
-              <div className="w-fit text-white font-bold text-3xl pl-10 py-8 after:block after:w-[37%] after:h-1 after:bg-orange-600 after:rounded-full after:mt-4">About Us</div>
+      <div className={`w-full h-48 bg-cover bg-right-top`} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${image})`}}>
+          <Container className='h-full'>
+              <div className="h-full text-white font-bold text-4xl flex flex-col justify-center
+                            after:block after:w-[7%] after:h-1 after:bg-orange-600 after:rounded-full after:mt-4"
+              >
+                About Us
+              </div>
           </Container>
       </div>
 
@@ -21,19 +26,19 @@ function About() {
 
       <div className="w-full py-20">
         <Container className='flex flex-wrap justify-center gap-16 md:flex-nowrap'>
-            <div>
+            <div className='flex-grow'>
                 <div className='text-orange-600 text-2xl italic'><FaQuoteLeft /></div>
                 <h1 className='font-bold text-2xl italic leading-relaxed mt-6 sm:text-3xl sm:leading-relaxed after:block after:w-1/5 after:h-1 after:bg-orange-600 after:rounded-full after:mt-6'>
-                    We love to help all the children that have problems in the world. After 15 years we have many goals achieved.
+                  Guiding this cause has shown us the incredible difference that kindness and action can bring to those in need.
                 </h1>
-                <p className='mt-6'>Maria Williams, <span className='text-orange-600'>Volunteer</span></p>
+                <p className='mt-6'>- Kamal Mittal, <span className='text-orange-600'>NGO President</span></p>
             </div>
-            <div>
+            <div className='flex-grow'>
                 <div className='text-orange-600 text-2xl italic'><FaQuoteLeft /></div>
                 <h1 className='font-bold text-2xl italic leading-relaxed mt-6 sm:text-3xl sm:leading-relaxed after:block after:w-1/5 after:h-1 after:bg-orange-600 after:rounded-full after:mt-6'>
-                    We love to help all the children that have problems in the world. After 15 years we have many goals achieved.
+                  We strive to uplift lives by providing essential resources and opportunities, fostering growth and self-reliance.
                 </h1>
-                <p className='mt-6'>- Maria Williams, <span className='text-orange-600'>Volunteer</span></p>
+                <p className='mt-6'>- Ankit Mittal, <span className='text-orange-600'>NGO General Secretary</span></p>
             </div>
         </Container>
       </div>

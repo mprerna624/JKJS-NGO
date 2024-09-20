@@ -19,7 +19,7 @@ function Contact() {
         <Container className='flex flex-wrap justify-around gap-10 md:flex-nowrap md:gap-24'>
             <div className='text-black/50'>
                 <h1 className='font-bold text-black text-2xl'>Get in touch with us</h1>
-                <p className='mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed ea assumenda. Voluptatibus aliquam earum, assumenda maiores obcaecati explicabo, ab inventore reprehenderit possimus numquam sunt, deserunt tempore veniam quibusdam quis.</p>
+                <p className='mt-8'>Founded in September 2023, Jan Kalyan Jan Sahyog foundation is a non-profit organization driven by compassion, collaboration, and a commitment to making a difference. Our team is comprised of passionate individuals, including volunteers, donors, and community partners, all working together towards a common goal. We are inspired by the resilience of those we serve and are motivated by the belief that every meal we provide can spark hope and change.</p>
                 <div className='flex items-center gap-4 mt-8'>
                     <Link to="#" className='inline-block text-xl text-orange-600'><FaFacebook /></Link>
                     <Link to="#" className='inline-block text-xl text-orange-600'><FaInstagram /></Link>

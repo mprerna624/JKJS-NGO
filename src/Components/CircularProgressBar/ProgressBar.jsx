@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from 'react'
 
-function ProgressBar({progressPercentage, title}) {
+function ProgressBar({progressPercentage, title, isVisible}) {
 
     const [percent, setPercent] = useState(0);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setPercent( (prev) => {
-                if(prev >= progressPercentage) {
-                    clearInterval(interval);
-                    return prev;
-                }
+        if(isVisible) {
+            const interval = setInterval(() => {
+                setPercent( (prev) => {
+                    if(prev >= progressPercentage) {
+                        clearInterval(interval);
+                        return prev;
+                    }
 
-                return prev + 1;
-            } )
-        }, 50);
+                    return prev + 1;
+                } )
+            }, 50);
 
-        return () => clearInterval(interval);
-    }, [progressPercentage])
+            return () => clearInterval(interval);
+        }
+    }, [progressPercentage, isVisible])
 
   return (
     <div className='text-center'>

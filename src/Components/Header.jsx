@@ -35,25 +35,28 @@ function Header() {
                             <NavLink to="/"
                                 className={({isActive}) => 
                                     `inline-block py-3 w-full font-semibold border-b-[3px] hover:text-orange-600 hover:border-orange-600 md:py-7 
-                                    ${isActive ? "text-orange-600  border-orange-600" : "text-blac border-transparentk"}`}
+                                    ${isActive ? "text-orange-600  border-orange-600" : "text-black border-transparent"}`}
+                                    onClick={() => setMenuBtnOpen(false)}
                             >
                                 Home
                             </NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavLink to="/causes"
                                 className={({isActive}) => 
                                     `inline-block py-3 w-full font-semibold border-b-[3px] hover:text-orange-600 hover:border-orange-600 md:py-7 
                                     ${isActive ? "text-orange-600 border-orange-600" : "text-black border-transparent"}`}
+                                    onClick={() => setMenuBtnOpen(false)}
                             >
                                 Causes
                             </NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink to="/gallery"
                                 className={({isActive}) => 
                                     `inline-block py-3 w-full font-semibold border-b-[3px] hover:text-orange-600 hover:border-orange-600 md:py-7
                                     ${isActive ? "text-orange-600 border-orange-600" : "text-black border-transparent"}`}
+                                    onClick={() => setMenuBtnOpen(false)}
                             >
                                 Gallery
                             </NavLink>
@@ -63,8 +66,9 @@ function Header() {
                                 className={({isActive}) => 
                                     `inline-block py-3 w-full font-semibold border-b-[3px] hover:text-orange-600 hover:border-orange-600 md:py-7
                                     ${isActive ? "text-orange-600 border-orange-600" : "text-black border-transparent"}`}
+                                    onClick={() => setMenuBtnOpen(false)}
                             >
-                                Blogs
+                                Articles
                             </NavLink>
                         </li>
                         <li>
@@ -72,6 +76,7 @@ function Header() {
                                 className={({isActive}) => 
                                     `inline-block py-3 w-full font-semibold border-b-[3px] hover:text-orange-600 hover:border-orange-600 md:py-7
                                     ${isActive ? "text-orange-600 border-orange-600" : "text-black border-transparent"}`}
+                                    onClick={() => setMenuBtnOpen(false)}
                             >
                                 About
                             </NavLink>
@@ -81,6 +86,7 @@ function Header() {
                                 className={({isActive}) => 
                                     `inline-block py-3 w-full font-semibold border-b-[3px] hover:text-orange-600 hover:border-orange-600 md:py-7
                                     ${isActive ? "text-orange-600 border-orange-600" : "text-black border-transparent"}`}
+                                    onClick={() => setMenuBtnOpen(false)}
                             >
                                 Contact
                             </NavLink>
