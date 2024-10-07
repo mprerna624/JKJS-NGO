@@ -24,7 +24,7 @@ function ProgressBar({progressPercentage, title, isVisible}) {
   return (
     <div className='text-center'>
         <div className="circle relative flex justify-center items-center w-40 h-40 rounded-full 
-            after:absolute after:inset-1 after:bg-gray-900 after:rounded-full"
+            after:absolute after:inset-1 after:bg-[var(--bg-dark)] after:rounded-full"
             style={{background: `conic-gradient(#ea580c ${percent}%, #000 0%)`}}
         >
             <h1 className='font-bold text-4xl z-10'>{percent}%</h1>

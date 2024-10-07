@@ -8,7 +8,7 @@ import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin, FaXTwitter } from "reac
 
 function Footer() {
   return (
-    <footer className='bg-slate-800 text-white py-8'>
+    <footer className='bg-[var(--bg-dark)] text-[var(--para-light)] py-8'>
         <Container className='flex flex-wrap justify-center gap-8 md:justify-between'>
             <div className='flex flex-col justify-between'>
                 <Logo />
@@ -24,20 +24,21 @@ function Footer() {
 
             <div className='flex flex-wrap justify-between gap-16'>
                 <div>
-                    <h6 className='font-semibold underline underline-offset-8 mb-6'>Useful Links</h6>
-                    <ul>
+                    <h6 className='font-bold heading-font underline underline-offset-8 mb-6'>Useful Links</h6>
+                    <ul className='text-sm'>
                         {/* <li className='mb-3'><Link to="#">Causes</Link></li> */}
                         <li className='mb-3'><Link to="#">Gallery</Link></li>
                         <li className='mb-3'><Link to="#">Articles</Link></li>
-                        <li className='mb-3'><Link to="#">About Us</Link></li>
+                        <li className='mb-3'><Link to="/about">About Us</Link></li>
                     </ul>
                 </div>
-                <div>
-                    <h6 className='font-semibold underline underline-offset-8 mb-6'>Contact Us</h6>
-                    <ul>
+                <div className='w-60'>
+                    <h6 className='font-bold heading-font underline underline-offset-8 mb-6'>Contact Us</h6>
+                    <ul className='text-sm'>
                         <li className='mb-3 flex items-center gap-3'><span className='inline-block'><FaPhoneAlt /></span> +91 9876543210</li>
                         <li className='mb-3 flex items-center gap-3'><span className='inline-block'><TbMailFilled /></span> example@gmail.com</li>
-                        <li className='mb-3 flex items-center gap-3'><span className='inline-block'><IoLocationSharp /></span>Some Location</li>
+                        <li className='mb-3 flex items-baseline gap-3'><span className='inline-block'><IoLocationSharp /></span>D-302, Bawana Industrial Area, Sector-5, Bawana, Delhi-110039</li>
+                        {/* <li className='mb-3 flex items-center gap-3 text-balance'><span className='inline-block'><IoLocationSharp /></span>Some Location</li> */}
                     </ul>
                 </div>
             </div>
