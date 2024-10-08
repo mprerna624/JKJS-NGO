@@ -38,7 +38,6 @@ function Footer() {
                         <li className='mb-3 flex items-center gap-3'><span className='inline-block'><FaPhoneAlt /></span> +91 9876543210</li>
                         <li className='mb-3 flex items-center gap-3'><span className='inline-block'><TbMailFilled /></span> example@gmail.com</li>
                         <li className='mb-3 flex items-baseline gap-3'><span className='inline-block'><IoLocationSharp /></span>D-302, Bawana Industrial Area, Sector-5, Bawana, Delhi-110039</li>
-                        {/* <li className='mb-3 flex items-center gap-3 text-balance'><span className='inline-block'><IoLocationSharp /></span>Some Location</li> */}
                     </ul>
                 </div>
             </div>

@@ -11,6 +11,20 @@
   box-sizing: border-box;
 }
 
+:root{
+  --bg-page: #F7F6F0;
+  --bg-card: #3b4d61;
+  --bg-dark: #00334e;
+  --heading-light: #fff;
+  --heading-dark: #2c2c2c;
+  --para-light: #E8E8E8;
+  --para-dark: #374151;
+  --bg-gradient-dark: linear-gradient(to right, #EA580C, #F97316); 
+  --bg-gradient-invert: linear-gradient(to left, #EA580C, #F97316); 
+
+  --ff-o: "Oswald", sans-serif;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -24,20 +38,6 @@ body {
 img {
   max-width : 100%;
   height: auto;
-}
-
-:root{
-
-  --bg-page: #F7F6F0;
-  --bg-card: #3b4d61;
-  --bg-dark: #00334e;
-  --heading-light: #fff;
-  --heading-dark: #2c2c2c;
-  --para-light: #E8E8E8;
-  --para-dark: #374151;
-  --bg-gradient-dark: linear-gradient(to right, #EA580C, #F97316); 
-  --bg-gradient-invert: linear-gradient(to left, #EA580C, #F97316); 
-
 }
 
 /* Animation in About Us Page - Circular Progress Bar */

@@ -50,8 +50,8 @@ function Header() {
                 </button>
 
                 <nav className={`${menuBtnOpen ? "left-0 opacity-100" : "-left-full opacity-0"}
-                    absolute min-h-screen top-0 p-8 w-2/5 shadow-md transition-all duration-700 ease-linear z-10
-                    md:static md:min-h-full md:p-0 md:shadow-none md:w-auto md:opacity-100 md:transition-none`}
+                    absolute min-h-screen top-0 p-8 w-2/5 bg-[var(--bg-page)] shadow-md transition-all duration-700 ease-linear z-10
+                    md:static md:min-h-full md:p-0 md:bg-transparent md:shadow-none md:w-auto md:opacity-100 md:transition-none`}
                 >
                     <ul className='md:flex md:justify-between md:gap-6'>
 

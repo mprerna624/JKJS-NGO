@@ -97,7 +97,7 @@ function About() {
           <h2 className="text-4xl text-center heading-font font-bold text-[var(--heading-dark)]">Our Values</h2>
           <HeadingUnderline className='mx-auto w-[10%]' />
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-lg shadow-lg text-white" style={{background: "var(--bg-card)"}}>
+            <div className="p-6 rounded-lg shadow-2xl text-white" style={{background: "var(--bg-card)"}}>
               <div className="text-4xl flex items-center justify-center mb-4">
                 <FaHandHoldingHeart />
               </div>
@@ -107,7 +107,7 @@ function About() {
               </p>
             </div>
 
-            <div className="p-6 rounded-lg shadow-lg text-white" style={{background: "var(--bg-card)"}}>
+            <div className="p-6 rounded-lg shadow-2xl text-white" style={{background: "var(--bg-card)"}}>
               <div className="text-4xl flex items-center justify-center mb-4">
                 <GiOpenBook />
               </div>
@@ -117,7 +117,7 @@ function About() {
               </p>
             </div>
 
-            <div className="p-6 rounded-lg shadow-lg text-white" style={{background: "var(--bg-card)"}}>
+            <div className="p-6 rounded-lg shadow-2xl text-white" style={{background: "var(--bg-card)"}}>
               <div className="text-5xl flex items-center justify-center mb-1">
                 <MdGroups2 />
               </div>
@@ -127,7 +127,7 @@ function About() {
               </p>
             </div>
 
-            <div className="p-6 rounded-lg shadow-lg text-white" style={{background: "var(--bg-card)"}}>
+            <div className="p-6 rounded-lg shadow-2xl text-white" style={{background: "var(--bg-card)"}}>
               <div className="text-4xl flex items-center justify-center mb-4">
                 <IoShieldCheckmarkSharp />
               </div>
@@ -141,9 +141,9 @@ function About() {
       </div>
 
       {/* Progress Container */}
-      <div className="w-full text-white" style={{background: "var(--bg-dark)"}}>
+      {/* <div className="w-full text-white" style={{background: "var(--bg-dark)"}}>
         <ProgressContainer />
-      </div>
+      </div> */}
 
       {/* Testimonials Section */}
       <div className="w-full py-20">
@@ -171,7 +171,7 @@ function About() {
       <div className="w-full py-20 bg-orange-600">
         <Container className='flex flex-wrap justify-center items-center gap-10 lg:gap-24'>
             <h1 className='text-white text-4xl font-bold'>Help us so we can help others</h1>
-            <Button className='border-2 border-white'>Donate Now</Button>
+            <Button className='border-2 border-white' to='#'>Donate Now</Button>
         </Container>
       </div>
     </>

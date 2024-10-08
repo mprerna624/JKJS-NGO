@@ -11,14 +11,14 @@ import image from "../assets/bg-header.jpeg"
 function Contact() {
   return (
     <>
-        <div className={`heading-font w-full h-56 bg-cover bg-[50%_20%]`} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${image})`}}>
-          <Container className='h-full'>
-              <div className="h-full text-white font-bold text-5xl flex flex-col justify-center
-                            after:block after:w-[7%] after:h-1 after:bg-orange-600 after:rounded-full after:mt-4"
-              >
-                Contact Us
-              </div>
-          </Container>
+      <div className={`heading-font w-full h-56 bg-cover bg-[50%_20%]`} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${image})`}}>
+        <Container className='h-full'>
+            <div className="h-full text-white font-bold text-5xl flex flex-col justify-center
+                          after:block after:w-[7%] after:h-1 after:bg-orange-600 after:rounded-full after:mt-4"
+            >
+              Contact Us
+            </div>
+        </Container>
       </div>
 
       <div className="w-full py-10">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { CarouselSection, Container, Button, HeadingUnderline }from '../Components';
-import {card_icon1, card_icon2, card_icon3, jkjs_intro, feed_india_img, get_involved_img, aktionLogo, jbwLogo,C3Logo, people_icon, days_icon, volunteer_icon} from '../assets'
+import {card_icon1, card_icon2, card_icon3, jkjs_intro, feed_india_img, get_involved_img, aktionLogo, jbwLogo,C3Logo, people_icon, days_icon, volunteer_icon, gallery_image3} from '../assets'
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
@@ -34,7 +34,7 @@ function Home() {
             <Container className="text-center flex flex-wrap justify-center gap-x-4 gap-y-8 md:justify-evenly xl:justify-between">
                     {
                         introCards.map((card, index) => (
-                            <div key={index} className='px-4 py-6 max-w-80 rounded-xl bg-gray-200 text-white shadow-xl my-6 sm:m-0 sm:p-8' style={{background: "var(--bg-card)" }}>
+                            <div key={index} className='px-4 py-6 max-w-80 rounded-xl bg-gray-200 text-white shadow-2xl my-6 sm:m-0 sm:p-8' style={{background: "var(--bg-card)" }}>
                                 <div className="mx-auto w-24 h-16">
                                     <img src={card.icon} alt="icons" />
                                 </div>
@@ -47,7 +47,7 @@ function Home() {
         </div>
 
         {/* About Intro */}
-        <div className="bg-gray-900 text-white" style={{background: "var(--bg-dark)", color: "var(--para-light)"}}>
+        <div className='w-full' style={{background: "var(--bg-dark)", color: "var(--para-light)"}}>
             <Container>
                 <div className='py-20 flex flex-col items-center gap-10 lg:flex-row-reverse lg:gap-14 xl:gap-28'>
                     <div>
@@ -57,7 +57,7 @@ function Home() {
                         <h2 className='font-bold text-3xl heading-font' style={{color: "var(--heading-light)"}}>Jan Kalyan Jan Sahyog Foundation</h2>
                         <HeadingUnderline />
                         <p className='mt-6 leading-7 tracking-wide'>We believe that no one should go hungry. Our mission is simple yet profound - to ensure that every individual in India has access to nutritious and sufficient food. With your support, we strive to eliminate hunger and create a future where every meal is a source of strength and hope. Join us in our mission to create a world where everyone has access to the essential nourishment they deserve.</p>
-                        <Button className='mt-8' onClick={() => navigate('/about')}>Read More</Button>
+                        <Button className='mt-8' to='/about'>Read More</Button>
                     </div>
                 </div>
             </Container>
@@ -68,7 +68,7 @@ function Home() {
         <Container>
             <div className='py-20 flex flex-col items-center gap-10 lg:flex-row lg:gap-14 xl:gap-28'>
                 <div>
-                    <img src={feed_india_img} alt="image" className='max-h-72 lg:max-h-[auto]'/>
+                    <img src={gallery_image3} alt="image" className='max-h-72 lg:max-h-[auto] rounded-lg shadow-lg'/>
                 </div>
                 <div className='w-full lg:w-1/2'>
                     <h2 className='font-bold heading-font text-3xl' style={{color: "var(--heading-dark)"}}>Feed India - Mission to Nourish Every Soul</h2>
@@ -88,14 +88,14 @@ function Home() {
                         </div>
                     </div>
 
-                    <Button className='mt-8'>Donate Now</Button>
+                    <Button className='mt-8' to='#'>Donate Now</Button>
                 </div>
             </div>
         </Container>
         </div>
 
         {/* Get Involved */}
-        <div className="w-full bg-gray-900 text-white" style={{background: "var(--bg-dark)", color: "var(--para-light)"}}>
+        <div className="w-full" style={{background: "var(--bg-dark)", color: "var(--para-light)"}}>
             <Container>
                 <div className='py-20 flex flex-col items-center gap-10 lg:flex-row-reverse lg:justify-between lg:gap-14 xl:gap-28'>
                     <div>

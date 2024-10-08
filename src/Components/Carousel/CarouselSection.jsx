@@ -1,18 +1,17 @@
 import React from 'react';
 import Carousel from './Carousel';
-import { slider_image0, slider_image1, slider_image2, slider_image3, test } from "../../assets";
+import { slider_image1, slider_image2, slider_image3, slider_image4 } from "../../assets";
 
 function CarouselSection() {
 
-    // const slides = [slider_image0, slider_image1, slider_image2, slider_image3];
-    const slides = [test];
+    const slides = [slider_image1, slider_image2, slider_image3, slider_image4];
 
   return (
     <div className='w-full'>
-        <Carousel autoSlide={false} className='md:h-[80vh]' >
+        <Carousel autoSlide={true} className='md:h-[80vh]' >
             {
                 slides.map( (image, index) => (
-                    <img key={index} src={image} alt="Slide Images" className='object-fill object-center' />
+                    <img key={index} src={image} alt="Slide Images" />
                 ) )
             }
         </Carousel>
