@@ -27,16 +27,16 @@ function Footer() {
                     <h6 className='font-bold heading-font underline underline-offset-8 mb-6'>Useful Links</h6>
                     <ul className='text-sm'>
                         {/* <li className='mb-3'><Link to="#">Causes</Link></li> */}
-                        <li className='mb-3'><Link to="#">Gallery</Link></li>
-                        <li className='mb-3'><Link to="#">Articles</Link></li>
-                        <li className='mb-3'><Link to="/about">About Us</Link></li>
+                        <li className='mb-3 hover:underline underline-offset-4'><Link to="/gallery">Gallery</Link></li>
+                        <li className='mb-3 hover:underline underline-offset-4'><Link to="/articles">Articles</Link></li>
+                        <li className='mb-3 hover:underline underline-offset-4'><Link to="/about">About Us</Link></li>
                     </ul>
                 </div>
                 <div className='w-60'>
                     <h6 className='font-bold heading-font underline underline-offset-8 mb-6'>Contact Us</h6>
                     <ul className='text-sm'>
-                        <li className='mb-3 flex items-center gap-3'><span className='inline-block'><FaPhoneAlt /></span> +91 9876543210</li>
-                        <li className='mb-3 flex items-center gap-3'><span className='inline-block'><TbMailFilled /></span> example@gmail.com</li>
+                        <li className='mb-3 flex items-center gap-3'><span className='inline-block'><FaPhoneAlt /></span> +91 9811253845</li>
+                        <li className='mb-3 flex items-center gap-3'><span className='inline-block'><TbMailFilled /></span> jkjsfoundation@gmail.com</li>
                         <li className='mb-3 flex items-baseline gap-3'><span className='inline-block'><IoLocationSharp /></span>D-302, Bawana Industrial Area, Sector-5, Bawana, Delhi-110039</li>
                     </ul>
                 </div>

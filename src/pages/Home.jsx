@@ -75,18 +75,18 @@ function Home() {
                     <HeadingUnderline />
                     <p className='mt-6 leading-7 tracking-wide'>Despite India's growing economy, hunger remains a critical issue. Millions of families face food insecurity every day. Children go to bed hungry, and adults struggle to find their next meal. This challenge is not just about lack of food but also about the distribution and accessibility of nutritious meals. </p> 
                     <p className='mt-1 leading-7 tracking-wide'> Our Approach: We provide hot meals through community kitchens and distribute groceries to those in need. We also educate communities about nutrition and collaborate with partners to maximize our impact.</p>
-                    <div className="mt-10 mx-auto w-[90%]">
+                    {/* <div className="mt-10 mx-auto w-[90%]">
                         <div className='h-[5px] bg-slate-300 rounded-full relative
                                         before:absolute before:h-[5px] before:w-1/2 before:inset-0 before:bg-orange-600 before:rounded-full
                                         after:content-["50%"] after:absolute after:w-11 after:h-11 after:left-[50%] after:-translate-x-[50%] after:-translate-y-[50%] after:p-2 after:pt-[10px] after:bg-orange-600 after:text-white after:rounded-full'
                         >
-                            {/* {Donate Line Bar} */}
+                            // {Donate Line Bar}
                         </div>
                         <div className='flex justify-between items-center mt-4 text-black/75'>
                             <div>Raised: ₹12,345</div>
                             <div>Goal: ₹12,345</div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <Button className='mt-8' to='#'>Donate Now</Button>
                 </div>
@@ -142,7 +142,7 @@ function Home() {
                     <div className='lg:w-1/2'>
                         <h3 className='font-semibold text-[42px] leading-relaxed text-pretty' style={{color: "var(--heading-dark)"}}>A world where food is abundant, resources are shared, and every person has the opportunity to thrive.</h3>
                         <HeadingUnderline />
-                        <p className='mt-6 leading-relaxed'>We like providing assistance to anyone who struggles with hunger. We started daily food donations for around 100-200 people and we have already completed 365+ days to serve food on daily basis.</p>
+                        <p className='mt-6 leading-relaxed'>We like providing assistance to anyone who struggles with hunger. We started daily food donations for around 300-400 people and we have already completed 410+ days to serve food on daily basis.</p>
                     </div>
                     <div className="lg:w-1/2 flex flex-col justify-around gap-12 md:flex-row md:items-end">
                         <div>
@@ -152,7 +152,7 @@ function Home() {
                         </div>
                         <div>
                             <img src={days_icon} alt="Icon" className='w-[105px] h-[105px] mx-auto' />
-                            <p className='font-semibold text-center text-6xl mt-6 text-[var(--heading-dark)]'>400+</p>
+                            <p className='font-semibold text-center text-6xl mt-6 text-[var(--heading-dark)]'>410+</p>
                             <p className='my-4 text-center font-semibold'>Days Food Served</p>
                         </div>
                         <div>

@@ -35,8 +35,8 @@ function Contact() {
                 </div>
                 <div className='mt-8'>
                     <ul>
-                        <li className='mb-3 flex items-center gap-3'><span className='inline-block text-orange-600'><FaPhoneAlt /></span> +91 9876543210</li>
-                        <li className='mb-3 flex items-center gap-3'><span className='inline-block text-orange-600'><TbMailFilled /></span> example@gmail.com</li>
+                        <li className='mb-3 flex items-center gap-3'><span className='inline-block text-orange-600'><FaPhoneAlt /></span> +91 9811253845</li>
+                        <li className='mb-3 flex items-center gap-3'><span className='inline-block text-orange-600'><TbMailFilled /></span> jkjsfoundation@gmail.com</li>
                         <li className='mb-3 flex items-center gap-3'><span className='inline-block text-orange-600'><IoLocationSharp /></span>D-302, Bawana Industrial Area, Sector-5, Bawana, Delhi-110039</li>
                     </ul>
                 </div>

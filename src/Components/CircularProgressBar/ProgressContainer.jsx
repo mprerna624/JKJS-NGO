@@ -30,7 +30,7 @@ function ProgressContainer() {
         <ProgressBar progressPercentage={83} title="Hard Work" isVisible={isVisible} />
         <ProgressBar progressPercentage={100} title="Pure Love" isVisible={isVisible} />
         <ProgressBar progressPercentage={75} title="Smart Ideas" isVisible={isVisible} />
-        <ProgressBar progressPercentage={65} title="Good Decisions" isVisible={isVisible} />
+        <ProgressBar progressPercentage={80} title="Strategic Planning" isVisible={isVisible} />
       </div>
     </Container>
   )

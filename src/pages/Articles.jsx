@@ -34,7 +34,7 @@ const popularPosts = [
   },
   {
     id: 2,
-    title: 'Volunteering: Difference in Your Community',
+    title: 'Volunteer: Make Difference',
     date: 'September 20, 2024',
     image: 'https://blogger.googleusercontent.com/img/a/AVvXsEjUqEXniWDLIgPgYn8_uuT9nLhu7ysGGHntqRUEjqEdrEbWdSs9Hg_j7TSTPvytii4SrioomZRox3Mj-JbU2h3WqI30XjSalQ_inAqHG5QbydXltlKdu1JtbQlG1A8mC0xkxij3eEh5p5sXG2ZAp1GUnznp-evxlxduOoktGkxFg0ZM8YfCMoxi8v0Wyw',
   },
@@ -82,9 +82,11 @@ const Articles = () => {
                 <div>
                   {
                     popularPosts.map((post) => (
-                      <div key={post.id} className='mb-6 flex gap-6'>
-                        <div><img src={post.image} alt="post-image" className='w-24 h-24 object-cover' /></div>
-                        <div>
+                      <div key={post.id} className='mb-6 grid grid-cols-3 gap-6'>
+                        <div className='w-[90px] h-[90px]'>
+                          <img src={post.image} alt="post-image" className='w-full h-full object-cover' />
+                        </div>
+                        <div className='col-span-2'>
                           <h4 className=''>{post.title}</h4>
                           <p className='text-sm text-[var(--para-dark)]'>{post.date}</p>
                         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {  Button, Container, HeadingUnderline, ProgressContainer } from '../Components';
 import { FaQuoteLeft } from "react-icons/fa";
-import {bg_header, jkjs_intro} from "../assets"
+import {bg_header, jkjs_intro, our_mission} from "../assets"
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { MdGroups2 } from "react-icons/md";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
@@ -30,7 +30,7 @@ function About() {
       {/* Mission Section */}
       <div className="w-full py-12">
         <Container>
-          <div className="lg:flex items-center justify-between gap-6">
+          <div className="lg:flex items-center justify-around gap-6">
             <div className="lg:w-1/2 mb-8 lg:mb-0">
               <h2 className="text-4xl heading-font font-extrabold mb-4 text-[var(--heading-dark)]">Our Mission</h2>
               <HeadingUnderline />
@@ -44,7 +44,7 @@ function About() {
 
             <div className="md:w-fit mx-auto lg:mx-0">
               <img
-                src={jkjs_intro}
+                src={our_mission}
                 alt="Volunteers distributing food"
                 className="rounded-lg shadow-lg max-h-72 lg:max-h-[auto]"
               />
@@ -141,9 +141,9 @@ function About() {
       </div>
 
       {/* Progress Container */}
-      {/* <div className="w-full text-white" style={{background: "var(--bg-dark)"}}>
+      <div className="w-full text-white" style={{background: "var(--bg-dark)"}}>
         <ProgressContainer />
-      </div> */}
+      </div>
 
       {/* Testimonials Section */}
       <div className="w-full py-20">
@@ -154,7 +154,7 @@ function About() {
                   Guiding this cause has shown us the incredible difference that kindness and action can bring to those in need.
                 </h1>
                 <HeadingUnderline />
-                <p className='mt-6'>- Kamal Mittal, <span className='text-orange-600'>NGO President</span></p>
+                <p className='mt-6'>- Kamal Mittal, <span className='text-orange-600'>President</span></p>
             </div>
             <div className='flex-grow'>
                 <div className='text-orange-600 text-2xl italic'><FaQuoteLeft /></div>
@@ -162,7 +162,7 @@ function About() {
                   We strive to uplift lives by providing essential resources and opportunities, fostering growth and self-reliance.
                 </h1>
                 <HeadingUnderline />
-                <p className='mt-6'>- Ankit Mittal, <span className='text-orange-600'>NGO General Secretary</span></p>
+                <p className='mt-6'>- Ankit Mittal, <span className='text-orange-600'>General Secretary</span></p>
             </div>
         </Container>
       </div>
