@@ -21,7 +21,6 @@
   --para-dark: #374151;
   --bg-gradient-dark: linear-gradient(to right, #EA580C, #F97316); 
   --bg-gradient-invert: linear-gradient(to left, #EA580C, #F97316); 
-
   --ff-o: "Oswald", sans-serif;
 }
 
@@ -31,7 +30,7 @@ body {
 }
 
 .heading-font {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-o);
   font-weight: 700;
 }
 
@@ -55,4 +54,20 @@ img {
   animation: appear 1s linear forwards;
   /* animation-timeline: view(); */
   /* animation-range: entry 0; */
+}
+
+.pagination-btn {
+  border: 2px solid #F97316;
+}
+
+.pagination-btn:hover, .pagination-btn.active {
+  background: var(--bg-gradient-invert);
+  color: #fff;
+}
+
+.pagination-btn:disabled, .pagination-btn:disabled:hover {
+  cursor: not-allowed;
+  border-color: lightgray;
+  color: gray;
+  background: none;
 }

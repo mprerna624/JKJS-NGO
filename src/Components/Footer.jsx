@@ -11,7 +11,10 @@ function Footer() {
     <footer className='bg-[var(--bg-dark)] text-[var(--para-light)] py-8'>
         <Container className='flex flex-wrap justify-center gap-8 md:justify-between'>
             <div className='flex flex-col justify-between'>
-                <Logo />
+                <div className="logo-div flex items-center text-3xl heading-font">
+                    <Logo bg="dark" />
+                    <span>Jan Kalyan Jan Sahyog Foundation</span>
+                </div>
                 <div className='flex items-center gap-4'>
                     <Link to="#" className='inline-block text-xl'><FaFacebook /></Link>
                     <Link to="#" className='inline-block text-xl'><FaInstagram /></Link>

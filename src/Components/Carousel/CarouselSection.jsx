@@ -8,7 +8,7 @@ function CarouselSection() {
 
   return (
     <div className='w-full'>
-        <Carousel autoSlide={true} className='md:h-[80vh]' >
+        <Carousel autoSlide={true}>
             {
                 slides.map( (image, index) => (
                     <img key={index} src={image} alt="Slide Images" />

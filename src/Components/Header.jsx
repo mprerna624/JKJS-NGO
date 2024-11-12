@@ -36,12 +36,13 @@ function Header() {
     ]
 
   return (
-    <header className='w-full shadow-lg heading-font text-[var(--heading-dark)]' style={{background: "#fff"}}>
+    <header className='w-full shadow-xl heading-font text-[var(--heading-dark)] bg-[var(--bg-page)]'>
         <Container>
             <div className="w-full flex justify-between items-center">
-                <div className='border-yellow-400 border inline-block'>
-                    <Link to="/">
-                        <Logo />
+                <div className='inline-block'>
+                    <Link to="/" className='flex items-center gap-2'>
+                        <Logo bg="light" />
+                        <span className='text-3xl text-[var(--bg-dark)]'>Jan Kalyan Jan Sahyog Foundation</span>
                     </Link>
                 </div>
 

@@ -1,3 +1,7 @@
+//Logo
+import ngo_logo from './ngo-logo-blue.png'
+import ngo_logo_invert from './ngo-logo-invert.png'
+
 // Home Page
 import slider_image1 from "./carousel/image-1.jpeg"
 import slider_image2 from "./carousel/image-2.jpeg"
@@ -38,4 +42,4 @@ import gallery_image8  from "./gallery/gallery-8.jpeg"
 import gallery_image9  from "./gallery/gallery-9.jpeg"
 import gallery_image10  from "./gallery/gallery-10.jpeg"
 
-export {slider_image1, slider_image2, slider_image3, slider_image4, card_icon1, card_icon2, card_icon3, jkjs_intro, feed_india_img, get_involved_img, aktionLogo, jbwLogo, C3Logo, people_icon, days_icon, volunteer_icon, bg_header, our_mission, gallery_image1, gallery_image2, gallery_image3, gallery_image4, gallery_image5, gallery_image6, gallery_image7, gallery_image8, gallery_image9, gallery_image10}
+export {ngo_logo, ngo_logo_invert, slider_image1, slider_image2, slider_image3, slider_image4, card_icon1, card_icon2, card_icon3, jkjs_intro, feed_india_img, get_involved_img, aktionLogo, jbwLogo, C3Logo, people_icon, days_icon, volunteer_icon, bg_header, our_mission, gallery_image1, gallery_image2, gallery_image3, gallery_image4, gallery_image5, gallery_image6, gallery_image7, gallery_image8, gallery_image9, gallery_image10}

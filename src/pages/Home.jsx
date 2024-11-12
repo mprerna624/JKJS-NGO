@@ -1,11 +1,8 @@
 import React from 'react'
 import { CarouselSection, Container, Button, HeadingUnderline }from '../Components';
-import {card_icon1, card_icon2, card_icon3, jkjs_intro, feed_india_img, get_involved_img, aktionLogo, jbwLogo,C3Logo, people_icon, days_icon, volunteer_icon, gallery_image3} from '../assets'
-import { useNavigate } from 'react-router-dom';
+import {card_icon1, card_icon2, card_icon3, jkjs_intro, get_involved_img, aktionLogo, jbwLogo,C3Logo, people_icon, days_icon, volunteer_icon, gallery_image3} from '../assets'
 
 function Home() {
-
-    const navigate = useNavigate();
 
     const introCards = [
         {

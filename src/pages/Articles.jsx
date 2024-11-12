@@ -1,5 +1,5 @@
 import { Button, Container } from '../Components';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { bg_header } from '../assets';
 import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
@@ -41,6 +41,34 @@ const popularPosts = [
 ];
 
 const Articles = () => {
+
+  const totalBlogs = articles.length;
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 1;
+  const totalPages = Math.ceil(totalBlogs / blogsPerPage);
+
+  const indexEndOfPage = currentPage * blogsPerPage;
+  const indexStartOfPage = indexEndOfPage - blogsPerPage;
+  const currentPageBlogs = articles.slice(indexStartOfPage, indexEndOfPage);
+
+  const handlePrev = (e) => {
+    setCurrentPage((prev) => Math.max(prev-1, 1))
+  }
+
+  const handleNext = (e) => {
+   setCurrentPage((prev) => Math.min(prev+1, totalPages))
+  }
+
+  const handlePageClick = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  }
+
+    // Bcoz <Link to='/articles'> redirects to the middle of the page 
+    useEffect( () => {
+      window.scrollTo(0, 0)
+    }, [])
+
   return (
     <>
         <div className={`heading-font w-full h-56 bg-cover bg-[50%_20%]`} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${bg_header})`}}>
@@ -57,9 +85,10 @@ const Articles = () => {
           <Container className='lg:flex lg:justify-between lg:gap-8'>
             {/* List of Blogs */}
             <div className="lg:w-3/4">
+              <div className='flex flex-col gap-y-20'>
               { 
-                articles.map((blog) => (
-                  <div key={blog.id} className='eachBlog mb-20'>
+                currentPageBlogs.map((blog) => (
+                  <div key={blog.id} className='eachBlog'>
                     <div><img src={blog.image} alt="blog-image" className='w-full md:h-96 object-center object-cover' /></div>
                     <div className='mt-6'>
                       <p className="text-sm text-orange-600">{blog.date}</p>
@@ -71,6 +100,18 @@ const Articles = () => {
                   </div>
                 ))
               }
+              </div>
+
+              <div className='pagination my-14'>
+                <button className='pagination-btn mr-2 px-3 py-1 rounded-md' onClick={handlePrev} disabled={currentPage === 1}>Prev</button>
+                { 
+                  Array.from({length : totalPages}, (_, index) => (
+                    <button key={index} onClick={() => handlePageClick(index+1)} className={`${currentPage === index+1 ? 'active' : ''} pagination-btn mr-2 px-3 py-1 rounded-md`}>{index+1}</button>
+                  ))
+                }
+                <button className='pagination-btn mr-2 px-3 py-1 rounded-md' onClick={handleNext} disabled={currentPage === totalPages}>Next</button>
+              </div>
+
             </div>
 
             {/* Sidebar */}
@@ -82,12 +123,12 @@ const Articles = () => {
                 <div>
                   {
                     popularPosts.map((post) => (
-                      <div key={post.id} className='mb-6 grid grid-cols-3 gap-6'>
+                      <div key={post.id} className='mb-6 grid grid-cols-[90px_1fr] gap-6'>
                         <div className='w-[90px] h-[90px]'>
                           <img src={post.image} alt="post-image" className='w-full h-full object-cover' />
                         </div>
-                        <div className='col-span-2'>
-                          <h4 className=''>{post.title}</h4>
+                        <div>
+                          <h4>{post.title}</h4>
                           <p className='text-sm text-[var(--para-dark)]'>{post.date}</p>
                         </div>
                       </div>

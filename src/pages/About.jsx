@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {  Button, Container, HeadingUnderline, ProgressContainer } from '../Components';
 import { FaQuoteLeft } from "react-icons/fa";
-import {bg_header, jkjs_intro, our_mission} from "../assets"
+import {bg_header, our_mission} from "../assets"
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { MdGroups2 } from "react-icons/md";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";

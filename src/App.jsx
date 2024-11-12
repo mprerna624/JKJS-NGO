@@ -13,7 +13,7 @@ function App() {
 
       <Footer />
 
-      <div className="w-full bg-black text-white text-center font-semibold tracking-wider py-2" style={{fontFamily: 'var(--ff-o)'}}>Developed with passion by <span className="text-[#ff000d]">Prerna Mittal</span></div>
+      <div className="w-full bg-black text-white text-center font-semibold tracking-wider py-2" style={{fontFamily: 'var(--ff-o)'}}>Website developed with passion by <span className="text-[#ff000d]">Prerna Mittal</span></div>
     </div>
   )
 }
