@@ -23,6 +23,42 @@ const articles = [
     date: 'September 20, 2024',
     url: 'https://thejankalyanjansahyogfoundation.blogspot.com/2024/09/jan-kalyan-jan-sahyog-foundation.html'
   },
+  {
+    id: 3,
+    title: 'Supporting Vulnerable Communities Through Marriage Assistance',
+    content: 'Our foundation is dedicated to providing marriage assistance to poor and vulnerable communities. We understand that marriage is not just a personal milestone but also a social and economic one. By supporting couples in need, we aim to strengthen families, foster community development, and promote social cohesion.',
+    image: 'https://blogger.googleusercontent.com/img/a/AVvXsEiTrRGhIILiYHo9FzlZrJgUtc9zeW_lwvF1Wa5phlHmLaYoAAi4Oh3D_q9nTrSJWxtCifhM6hxeZf_8wLnD31Sq9rjw0Ze4syG3MyySIW3m5vNaFfQ5c6Nn8QBEMVulQ7PbFrHPlb4yxJ888i8L8IW1Q_eHAyx6B5PS5MWynEKc_q7kuxOIj9T5ALFIxybL',
+    author: 'Jan Kalyan Jan Sahyog Foundation',
+    date: 'November 18, 2024',
+    url: 'https://jankalyanjansahyogfoundation.blogspot.com/2024/11/supporting-vulnerable-communities.html'
+  },
+  {
+    id: 4,
+    title: 'Empowering Communities: The Role of Foundations in Serving the Poor',
+    content: 'Foundations play a crucial role in bridging the gap between those in need and the resources required for a better life. By focusing on serving underprivileged communities, this organizations contribute to alleviating poverty, providing access to education, healthcare, and improving living conditions. This article explores the importance of such foundations, how they operate, and the lasting impact they have on the lives of marginalized individuals.',
+    image: 'https://blogger.googleusercontent.com/img/a/AVvXsEjKhrSR0SlUBhbwlOaMT8d-9WdxRa41eLUrKdaU-Vt50FpFIGJXPS6p7SC7lsWTlGgO0bOipVOmamRhjFH1C4I9nAzGjaLsXqWpHBH7B07SIRaDBygEVdi0L-1OP8JoTPsHlvy3eJJJoHQnEqHA2RZMB0-BtTG5RbFCMIOk1ivaQcZv4N-9MEAbRatPenDl',
+    author: '',
+    date: 'October 18, 2024',
+    url: 'https://foundationpost.blogspot.com/2024/10/empowering-communities-role-of.html'
+  },
+  {
+    id: 5,
+    title: 'A Voice for the Voiceless: Helping Stray Animals Find a Home',
+    content: 'In every neighborhood, city, and rural area, stray animals roam the streets in search of food, shelter, and, most importantly, kindness. These animals, often neglected and misunderstood, rely on compassionate individuals and organizations to step in and make a difference. At Jan Kalyan Jan Sahyog Foundation, our mission is to provide strays with a second chance at life, one filled with love, care, and dignity.',
+    image: 'https://blogger.googleusercontent.com/img/a/AVvXsEjkxM4QC5lU81bOGRix4XN64lEEgZFbcDh4ebqjb0utZA_kuTmRrCuvl8XtbyiYkvVOm5jIBVK69j-5HF6qmsVbFUeMqjoBW7a3OsEdkHRnYV63tQeSBN8Cn5Ki-QH70faR_lMjLjpFcSu5VWKX16yhI-z9qur49jnbra6hivzzhTI7UZK6iJMghe1stPrq',
+    author: 'Jan Kalyan Jan Sahyog Foundation',
+    date: 'November 20, 2024',
+    url: 'https://jankalyanjansahyogfoundation.blogspot.com/2024/11/a-voice-for-voiceless-helping-stray.html'
+  },
+  {
+    id: 6,
+    title: 'The Importance of Road Safety Products',
+    content: 'Every road journey comes with its own set of risks. Whether it is navigating through construction zones, driving in low visibility, or simply managing traffic flow, road safety products are essential tools that quietly work to prevent accidents and save lives. At Jan Kalyan Jan Sahyog foundation, we are committed to spreading awareness about these unsung heroes of road safety and encouraging their responsible use.',
+    image: 'https://blogger.googleusercontent.com/img/a/AVvXsEhVpEAseIs9pxOoufYyGlF9JTAtCV1XpuJjHN6fB892RWR3VaNIdDWU_rjyh4YSmRBiDPTr4SlD5GmLkugK1ZI2X9YpZ1MJgcDBP_KMBxbOie2V0lYvw1M85mmB2DTH3J94N-djK3dwf2CVIhIokTpHsEkINmyGRjWHaxl-47pqWMqaTWiEL9VsRxc6zlAJ=w615-h346',
+    author: 'Jan Kalyan Jan Sahyog Foundation',
+    date: 'November 20, 2024',
+    url: 'https://jankalyanjansahyogfoundation.blogspot.com/2024/11/httpswww.jkjsfoundation.com.html'
+  },
 ];
 
 const popularPosts = [
@@ -45,7 +81,7 @@ const Articles = () => {
   const totalBlogs = articles.length;
 
   const [currentPage, setCurrentPage] = useState(1);
-  const blogsPerPage = 1;
+  const blogsPerPage = 2;
   const totalPages = Math.ceil(totalBlogs / blogsPerPage);
 
   const indexEndOfPage = currentPage * blogsPerPage;
