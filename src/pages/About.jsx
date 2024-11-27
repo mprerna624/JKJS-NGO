@@ -20,7 +20,7 @@ function About() {
       <div className={`heading-font w-full h-56 bg-cover bg-[50%_20%]`} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${bg_header})`}}>
           <Container className='h-full'>
               <div className="h-full text-white font-bold text-5xl flex flex-col justify-center
-                            after:block after:w-[7%] after:h-1 after:bg-orange-600 after:rounded-full after:mt-4"
+                            after:block after:w-[15%] after:lg:w-[7%] after:h-1 after:bg-orange-600 after:rounded-full after:mt-4"
               >
                 About Us
               </div>
@@ -58,7 +58,7 @@ function About() {
         <Container>
           <div className="w-5/6 mx-auto">
             <h2 className="text-4xl text-center font-bold heading-font text-[var(--heading-dark)]">Our Vision</h2>
-            <HeadingUnderline className='mx-auto w-[10%]' />
+            <HeadingUnderline className='mx-auto md:w-[10%]' />
             <p className="leading-loose my-6">
               At Jan Kalyan Jan Sahyog Foundation, we envision a world where hunger is eliminated and every individual, regardless of their circumstances, has the opportunity to thrive. We believe that access to nutritious food is a basic human right, and we are committed to ensuring that every person in India receives the nourishment they deserve.
             </p>
@@ -95,7 +95,7 @@ function About() {
       <div className="w-full pb-16">
         <Container>
           <h2 className="text-4xl text-center heading-font font-bold text-[var(--heading-dark)]">Our Values</h2>
-          <HeadingUnderline className='mx-auto w-[10%]' />
+          <HeadingUnderline className='mx-auto md:w-[10%]' />
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 rounded-lg shadow-2xl text-white" style={{background: "var(--bg-card)"}}>
               <div className="text-4xl flex items-center justify-center mb-4">
