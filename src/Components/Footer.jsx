@@ -9,12 +9,13 @@ import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin, FaXTwitter } from "reac
 function Footer() {
   return (
     <footer className='bg-[var(--bg-dark)] text-[var(--para-light)] py-8'>
-        <Container className='flex flex-wrap justify-center gap-8 md:justify-between'>
-            <div className='flex flex-col justify-between'>
-                <div className="logo-div flex items-center text-3xl heading-font">
+        <Container className='flex flex-wrap justify-center items-center gap-8 md:justify-between'>
+            <div className='flex flex-col justify-between items-center gap-6 min-[955px]:w-1/2 min-[955px]:items-start'>
+                <div className="flex flex-col sm:flex-row items-center heading-font">
                     <Logo bg="dark" />
-                    <span>Jan Kalyan Jan Sahyog Foundation</span>
+                    <span className='text-xl sm:text-2xl md:text-3xl'>Jan Kalyan Jan Sahyog Foundation</span>
                 </div>
+                <p className='text-center min-[955px]:text-left w-[90%]'>We established the Jan Kalyan Jan Sahyog Foundation in Sept 2023 with the goal of providing hope to those in need of assisstance.</p>
                 <div className='flex items-center gap-4'>
                     <Link to="#" className='inline-block text-xl'><FaFacebook /></Link>
                     <Link to="#" className='inline-block text-xl'><FaInstagram /></Link>
@@ -22,7 +23,7 @@ function Footer() {
                     <Link to="#" className='inline-block text-2xl'><FaYoutube /></Link>
                     <Link to="#" className='inline-block text-xl'><FaLinkedin /></Link>
                 </div>
-                <p>&copy; Copyright 2024. All Rights reserved.</p>
+                <p>&copy; Copyright 2024. All Rights Reserved.</p>
             </div>
 
             <div className='flex flex-wrap justify-between gap-16'>

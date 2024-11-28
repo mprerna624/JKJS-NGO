@@ -40,9 +40,9 @@ function Header() {
         <Container>
             <div className="w-full flex justify-between items-center py-3 md:py-0">
                 <div className='inline-block'>
-                    <Link to="/" className='flex items-center gap-2'>
+                    <Link to="/" className='flex flex-col min-[425px]:flex-row items-center gap-2'>
                         <Logo bg="light" />
-                        <span className=' hidden sm:inline-block sm:text-2xl sm:text-[var(--bg-dark)] md:hidden lg:inline-block lg:text-3xl'>Jan Kalyan Jan Sahyog Foundation</span>
+                        <span className='text-[var(--bg-dark)]  min-[425px]:text-xl sm:text-2xl lg:text-3xl'>Jan Kalyan Jan Sahyog Foundation</span>
                     </Link>
                 </div>
 
