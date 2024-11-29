@@ -27,9 +27,15 @@ function Carousel({
     <div className={`overflow-hidden relative ${className}`}>
         {/* Children : All Images */}
         <div className='flex transition-transform ease-out duration-500'
-          style={{transform : `translateX(-${currentIndex * 100}%)`}}
+          style={{transform : `translateX(-${currentIndex * 100}vw)`}}
         >
-            {children}
+            {
+                children.map((child, index) => (
+                    <div key={index} className='w-screen flex-shrink-0'>
+                        {child}
+                    </div>
+                ))
+            }
         </div>
 
         {/* Navigation Buttons */}
