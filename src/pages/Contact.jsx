@@ -6,9 +6,36 @@ import { TbMailFilled } from "react-icons/tb";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import image from "../assets/bg-header.jpeg"
-
+import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 
 function Contact() {
+
+  const {register, handleSubmit, formState: {errors, isSubmitting}, reset} = useForm();
+
+  const handleForm = async(data) => {
+      try {
+        const result = await emailjs.send(
+          import.meta.env.VITE_EMAIL_SERVICE_ID,
+          import.meta.env.VITE_EMAIL_TEMPLATE_ID, 
+          { //TestParams in EmailJS Template
+            from_name: data.name,
+            from_email: data.email,
+            message: data.msg
+          },
+          import.meta.env.VITE_EMAIL_PUBLIC_KEY,
+        );
+
+        console.log("Email sent successfully: ", result.text);
+        alert("Message sent successfully!");
+        reset(); //Reset the form fields
+      } 
+      catch (error) {
+        console.error("Failed to send message: ", error);
+        alert("Failed to send message. Please try again later.")
+      }
+  }
+
   return (
     <>
       <div className={`heading-font w-full h-56 bg-cover bg-[50%_20%]`} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${image})`}}>
@@ -42,11 +69,58 @@ function Contact() {
                 </div>
             </div>
 
-            <form className='bg-[var(--bg-dark)] px-6 py-12 flex-grow'>
-                <input type="text" placeholder='Name' className='w-full px-4 py-2 border border-slate-500' />
-                <input type="email" placeholder='Email' className='w-full px-4 py-2 border border-slate-500 mt-6' />
-                <textarea placeholder='Message'cols={200} rows={5} className='w-full px-4 py-2 border border-slate-500 mt-6'></textarea>
-                <Button className='mt-8 mx-auto'>Contact us</Button>
+            <form onSubmit={handleSubmit(handleForm)} className='bg-[var(--bg-dark)] px-6 py-12 flex-grow'>
+                <input type="text" 
+                  placeholder='Name' 
+                  className='w-full px-4 py-2 border border-slate-500' 
+                  {
+                    ...register("name", {
+                      required: "Name is required"
+                    })
+                  }
+                />
+                {errors.name && (
+                  <p className="text-white mt-2">{errors.name.message}</p>
+                )}
+
+                <input type="email" 
+                  placeholder='Email' 
+                  className='w-full px-4 py-2 border border-slate-500 mt-6' 
+                  {
+                    ...register("email", {
+                      required: "Email Id is required",
+                      pattern: {
+                        value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                        message: 'Enter a valid email address',
+                      }
+                    })
+                  }
+                />
+                {errors.email && (
+                  <p className="text-white mt-2">{errors.email.message}</p>
+                )}
+
+                <textarea placeholder='Message' 
+                  cols={200} rows={5} 
+                  className='w-full px-4 py-2 border border-slate-500 mt-6'
+                  {
+                    ...register("msg", {
+                      required: "Message is required"
+                    })
+                  }
+                ></textarea>
+                {errors.msg && (
+                  <p className="text-white mt-2">{errors.msg.message}</p>
+                )}
+
+                <button type='submit' disabled={isSubmitting} 
+                  className='mt-8 mx-auto block px-10 py-4 rounded-3xl heading-font text-lg tracking-wide cursor-pointer outline-0 transition-colors duration-600 ease-in-out'
+                  style={{background: "var(--bg-gradient-dark)", color: "#fff"}}
+                  onMouseEnter={(e) => e.target.style.background = 'var(--bg-gradient-invert)'} //hover effect
+                  onMouseLeave={(e) => e.target.style.background = 'var(--bg-gradient-dark)'}
+                >
+                  {isSubmitting ? "Sending...." : "Contact Us"}
+                </button>
             </form>
         </Container>
       </div>
